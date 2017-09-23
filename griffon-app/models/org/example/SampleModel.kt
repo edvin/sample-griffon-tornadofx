@@ -9,7 +9,7 @@ import tornadofx.*
 
 @ArtifactProviderFor(GriffonModel::class)
 class SampleModel : AbstractGriffonModel() {
-    private var _clickCount: IntegerProperty = SimpleIntegerProperty(this, "clickCount", 0)
+    private val _clickCount: IntegerProperty = SimpleIntegerProperty(this, "clickCount", 0)
     var clickCount by _clickCount
     fun clickCountProperty() = _clickCount
 }
