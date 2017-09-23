@@ -17,7 +17,7 @@ import javax.annotation.Nonnull
 class SampleView : AbstractJavaFXGriffonView(), EventTarget {
     @set:[MVCMember Nonnull]
     lateinit var model: SampleModel
-    @set:[MVCMember]
+    @set:[MVCMember Nonnull]
     lateinit var controller: SampleController
 
     override fun initUI() {
@@ -37,7 +37,7 @@ class SampleView : AbstractJavaFXGriffonView(), EventTarget {
 
             row {
                 button {
-                    id = "clickActionTarget"
+                    id        = "clickActionTarget"
                     prefWidth = 200.0
                 }
             }
